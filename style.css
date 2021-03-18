@@ -51,9 +51,9 @@ p{
     flex-basis: 50%;
     min-width: 300px;
 }
-.col-2 img{
+.col-2 img {
     max-width: 100%;
-    padding: 50px 0;
+    padding: 110px 0;
 }
 .col-2 h1{
     font-size: 50px;
@@ -67,7 +67,7 @@ p{
     margin: 30px 0;
     border-radius: 30px;
     padding: 8px 30px;
-    transition: background 0.5s;
+    transition: 0.5s;
 }
 .btn:hover{
     background: rgb(102, 204, 0);
@@ -344,6 +344,113 @@ input:focus{
     flex-basis: 24%;
     cursor: pointer;
 }
+
+/* ===================== cart-item ==================== */
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-weight: normal;
+    background: rgb(255, 29, 29);
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: rgb(118, 216, 37);
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.Total-Price{
+    display: flex;
+    justify-content: flex-end;
+}
+.Total-Price table{
+    border-top: 3px solid rgb(245, 70, 16);
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th :last-child{
+    text-align: right;
+}
+
+/* ======================== account-page ====================== */
+.account-page{
+    padding: 50px 0;
+    background: rgb(149, 255, 139);
+}
+.form-container{
+    background:#fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: 1px solid rgb(65, 238, 65);
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#form-btn{
+    left: -300px;
+}
+#reg-form{
+    left: 0;
+}
 /* =================== media quary for menu ================= */
 
 @media only screen and (max-width: 800px){
@@ -389,5 +496,8 @@ input:focus{
     .single-product h1{
         font-size: 26px;
         line-height: 22px;
+    }
+    .cart-info p{
+        display: none;
     }
 }
